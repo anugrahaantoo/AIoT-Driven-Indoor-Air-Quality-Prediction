@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-half {
+  height: 60vh;
+  position: relative;
+  
+}
+
+.bottom-half {
+  height: 40vh;
+  position: relative;
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); 
+  /* 
+  /* xzdisplay: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center; */
+  
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #915454;
+}

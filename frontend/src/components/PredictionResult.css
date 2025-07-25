@@ -1,0 +1,62 @@
+.prediction-banner {
+  height: 40vh;
+  position: relative;
+  text-align: center;
+  
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 20px;
+  min-height: 200px;
+  transition: background 0.5s ease;
+}
+
+.prediction-box {
+ 
+  background-color: rgba(195, 168, 168, 0.1);
+  padding: 20px 32px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.prediction-box span {
+  font-size: 36px;
+  font-weight: 70;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 14px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+/* Gradient styles based on AQI level */
+.prediction-banner.good {
+  background: linear-gradient(to bottom, #1b5e20, #66bb6a); /* Green */
+}
+
+.prediction-banner.moderate {
+  background: linear-gradient(to bottom, #fbc02d, #fff59d); /* Yellow */
+  color: #000;
+}
+
+.prediction-banner.unhealthy-for-sensitive-groups {
+  background: linear-gradient(to bottom, #fb8c00, #ffe0b2); /* Orange */
+}
+
+.prediction-banner.unhealthy {
+  background: linear-gradient(to bottom, #e53935, #ef9a9a); /* Red */
+}
+
+.prediction-banner.very-unhealthy {
+  background: linear-gradient(to bottom, #8e24aa, #ce93d8); /* Purple */
+}
+
+.prediction-banner.hazardous {
+  background: linear-gradient(to bottom, #b05a64, #670606); /* Maroon */
+}
